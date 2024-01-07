@@ -12,8 +12,6 @@ function ToastPlayground() {
     const [variant, setVariant] = React.useState(VARIANT_OPTIONS[0]);
     const { createToast } = React.useContext(ToastContext);
 
-    console.log('playground rerender')
-
     function handlePopToast(e) {
         e.preventDefault();
         createToast(message, variant);
